@@ -5,6 +5,11 @@ class User extends Model<User> {
 
   @Column
   name: string;
+
+  constructor() {
+    super();
+  }
+
 }
 
 const sequelize = new Sequelize({
